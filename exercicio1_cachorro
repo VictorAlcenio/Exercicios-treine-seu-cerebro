@@ -1,0 +1,26 @@
+<?php
+
+//Faça um algoritmo que peça o nome e o peso de um cachorro.
+//• Caso o cachorro tenha até 2kg, deve ser impressa a frase : <esse cachorro late fino: au au au>
+//• Caso tenha até 10kg, deve ser impressa a frase : <esse cachorro tem um belo latido>
+//• Caso tenha mais que 10kg, deve ser impressa a frase: <esse cachorro late grosso: woof, woof >
+
+print "Qual é o nome do cachorro? ";
+$nome_cachorro = fgets (STDIN);
+
+print "Qual é o peso do cachorro(kg)? ";
+$peso_cachorro = (float)fgets (STDIN);
+
+    If ($peso_cachorro<=2) {
+     print "Esse cachorro late fino: au au au";
+    }
+
+        If ($peso_cachorro<=10 && $peso_cachorro>2) {
+         print "Esse cachorro tem um belo latido";
+        }
+
+            If ($peso_cachorro>10) {
+              print "Esse cachorro late grosso: woof woof";
+            }
+
+
